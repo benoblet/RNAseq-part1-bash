@@ -1,8 +1,12 @@
 name: M2MEG-RNAseq-TP3-bash
 
 channels:
-  - conda-forge
+# channels priority
+# see https://bioconda.github.io/
+# conda-forge has highest prioriy
+  - defaults
   - bioconda
+  - conda-forge
 
 dependencies:
   - jupyterlab=2
@@ -18,5 +22,17 @@ dependencies:
   - qualimap
   - bedtools
   - htseq
+  - sra-tools
+  - libgomp
+  - r-irkernel
+  - r-base>=3.6
+  - r-tidyverse 
+  - r-Matrix
+  - r-lattice
+  - r-fdrtool
+  - r-rpart
+  - r-RSQLite
+  - r-gplots
+  - r-locfit
   - pip:
     - bash_kernel
