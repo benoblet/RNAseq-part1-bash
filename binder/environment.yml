@@ -1,0 +1,22 @@
+name: M2MEG-RNAseq-TP3-bash
+
+channels:
+  - conda-forge
+  - bioconda
+
+dependencies:
+  - jupyterlab=2
+  - nbresuse
+  - python>=3.7
+  - pip
+  - nodejs
+  - fastqc
+  - fastp
+  - bowtie
+  - samtools
+  - multiqc
+  - qualimap
+  - bedtools
+  - htseq
+  - pip:
+    - bash_kernel
