@@ -14,15 +14,21 @@ dependencies:
   - python>=3.7
   - pip
   - nodejs
+ # Fast QC tools
   - fastqc
   - fastp
-  - bowtie
-  - samtools
   - multiqc
   - qualimap
+ # Mappers
+  - bowtie
+  - star
+  - bwa-mem2
+ # Manipulation tools
+  - samtools
   - bedtools
-  - htseq
   - sra-tools
+ # Analysis tools
+  - htseq 
   - libgomp
   - r-irkernel
   - r-base>=3.6
