@@ -15,19 +15,24 @@ dependencies:
   - pip
   - nodejs
  # Fast QC tools
-  - fastqc
-  - fastp
-  - multiqc
-  - qualimap
+  - fastqc=0.11.9
+  - fastp=0.20.0
+  - multiqc=1.9
+  - qualimap=2.2.2
+  - fastq-screen=0.13.0
  # Mappers
   - bowtie
-  - star
+  - star=2.7.5a
   - bwa-mem2
  # Manipulation tools
-  - samtools
+  - samtools=1.10
   - bedtools
-  - sra-tools
+  - sra-tools=2.10.3
+  - pigz=2.3.4
  # Analysis tools
+  - subread=2.0.1
+  - stringtie
+  - r-sartools
   - htseq 
   - libgomp
   - r-irkernel
