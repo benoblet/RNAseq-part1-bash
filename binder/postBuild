@@ -27,3 +27,4 @@ R -e "BiocManager::install('Biostrings')"
 
 R -e "BiocManager::install('limma')"
 R -e "BiocManager::install('DESeq')"
+R -e "BiocManager::install('DESeq2')"
