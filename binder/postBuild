@@ -26,5 +26,3 @@ R -e "BiocManager::install('Biostrings')"
 # Ajout des packages R nécessaires depuis Bioconductor
 
 R -e "BiocManager::install('limma')"
-R -e "BiocManager::install('DESeq')"
-R -e "BiocManager::install('DESeq2')"
