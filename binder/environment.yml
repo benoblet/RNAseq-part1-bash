@@ -1,4 +1,4 @@
-name: M2MEG-RNAseq-TP3-bash
+name: RNAseq-part1-bash
 
 channels:
 # channels priority
@@ -14,24 +14,23 @@ dependencies:
   - python>=3.7
   - pip
   - nodejs
- # Fast QC tools
-  - fastqc=0.11.9
-  - fastp=0.20.0
-  - multiqc=1.9
-  - qualimap=2.2.2
-  - fastq-screen=0.13.0
- # Mappers
-  - bowtie
-  - star=2.7.5a
-  - bwa-mem2
- # Manipulation tools
-  - samtools=1.10
-  - bedtools
+ # Dataset retrieval
   - sra-tools=2.10.3
   - pigz=2.3.4
- # Analysis tools
+ # QC synthesis
+  - multiqc=1.9
+ # Preprocessing tools
+  - fastqc=0.11.9
+  - fastp=0.20.0
+  - fastq-screen=0.13.0
+ # Mapper and QC tools
+  - star=2.7.5a
+  - samtools=1.10
+  - qualimap=2.2.2
+ # Read summarizations
   - subread=2.0.1
   - stringtie
+ # Analysis tools
   - r-sartools
   - htseq 
   - libgomp
